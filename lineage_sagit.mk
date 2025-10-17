@@ -38,3 +38,18 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceName=sagit \
     DeviceProduct=sagit \
     SystemName=sagit
+
+# RisingOS specified
+RISING_MAINTAINER := linlinger
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingMaintainer="linlinger" \
+    RisingChipset="Snapdragon 835"
+
+
+TARGET_ENABLE_BLUR := true
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := false
+
+WITH_GMS := true
+TARGET_USES_PICO_GAPPS := true
